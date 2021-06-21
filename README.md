@@ -12,6 +12,18 @@ A website that shows all the list of cats based on different breeds
 
 https://api.thecatapi.com/v1/breeds/ 
 
+[
+    {
+        "weight": {
+            "imperial": "7  -  10",
+            "metric": "3 - 5"
+        },
+        "id": "abys",
+        "name": "Abyssinian",
+        "cfa_url": "http://cfa.org/Breeds/BreedsAB/Abyssinian.aspx",
+        "vetstreet_url": "http://www.vetstreet.com/cats/abyssinian",
+        "vcahospitals_url": "https://vcahospitals.com/know-your-pet/cat-breeds/abyssinian",
+        "temperament": "Active, Energetic, Independent, Intelligent, Gentle",
 
 ## Wireframes
 
