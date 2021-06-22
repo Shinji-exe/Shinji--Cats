@@ -5,13 +5,13 @@
 Shinji&Cats
 
 ## Project Description
-A website that shows all the list of cats based on different breeds
+A website that shows all the list of cats based on different breeds via drop down menu.
 
 
 ## API and Data Sample
 
 https://api.thecatapi.com/v1/breeds/ 
-
+```
 [
     {
         "weight": {
@@ -24,7 +24,7 @@ https://api.thecatapi.com/v1/breeds/
         "vetstreet_url": "http://www.vetstreet.com/cats/abyssinian",
         "vcahospitals_url": "https://vcahospitals.com/know-your-pet/cat-breeds/abyssinian",
         "temperament": "Active, Energetic, Independent, Intelligent, Gentle",
-
+```
 ## Wireframes
 
 Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
