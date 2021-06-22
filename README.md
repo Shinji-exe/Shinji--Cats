@@ -75,7 +75,13 @@ https://api.thecatapi.com/v1/breeds/ = using external API
 | --- | :---: |  :---: | :---: | :---: |
 | Adding Form | H | 3hrs| 3hrs | 3.5hrs |
 | Working with API | H | 6hrs| 6hrs | 12hrs |
-| Total | H | 9hrs| 9hrs | 30hrs |
+| drop down menu| H | 2hrs| 0hrs| 0hrs|
+| Render cat search| H | 3.5hrs | 0hrs | 0hrs|
+| CSS styling | H | 4hrs | 0hrs | 0hrs |
+|Clean up code & styling | 5hrs | 0hrs | 0hrs|
+| Media queries | H | 1.5hrs | 0hrs | 0hrs |
+| Create a save function | H | 3hrs | 0hrs | 0hrs|
+| Total | H | 0hrs| 0hrs | 0hrs | 0hrs|
 
 ## Code Snippet
 
