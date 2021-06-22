@@ -76,8 +76,8 @@ https://wireframe.cc/pro/pp/75bf12268452578
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Adding Form | H | 3hrs| 3hrs | 3.5hrs |
-| Working with API | H | 6hrs| 6hrs | 20hrs |
-| Total | H | 6hrs| 8hrs | 5hrs |
+| Working with API | H | 6hrs| 6hrs | 12hrs |
+| Total | H | 9hrs| 9hrs | 30hrs |
 
 ## Code Snippet
 
