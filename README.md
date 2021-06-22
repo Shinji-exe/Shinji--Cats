@@ -30,8 +30,7 @@ https://api.thecatapi.com/v1/breeds/
 
 
 <iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/5vDo4LYohhQ8uPUv3GEM5k@2Ux7TurymN8QmewbFRbY"></iframe>
-![image](https://user-images.githubusercontent.com/67288133/122973554-5ec11c80-d35f-11eb-8ebd-8acf8872aba6.png)
-
+![image](https://user-images.githubusercontent.com/67288133/122973712-887a4380-d35f-11eb-8ae4-a290df12ccb6.png)
 
 
 
@@ -70,7 +69,8 @@ https://api.thecatapi.com/v1/breeds/ = using external API
 
 
 <iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/SxWhuf3Keu9gqFHgStqsC7@2Ux7TurymN2ThVKU2Qmx"></iframe>
-![image](https://user-images.githubusercontent.com/67288133/122973712-887a4380-d35f-11eb-8ae4-a290df12ccb6.png)
+![image](https://user-images.githubusercontent.com/67288133/122973554-5ec11c80-d35f-11eb-8ebd-8acf8872aba6.png)
+
 
 
 ## Timeframes
