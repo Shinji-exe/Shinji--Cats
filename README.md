@@ -42,13 +42,16 @@ https://wireframe.cc/pro/pp/c7fac46c4452369
 https://api.thecatapi.com/v1/breeds/ = using external API
 - Render data on page = THe render data will be pictures of cats 
 - Allow user to choose favorites = dropdown menu with the names of cats
+- Media Quaries and flexbox will be added
+- First request will get the image
+- Second request will get the information on said image and breed
 
 #### PostMVP  
 
 
 Adding a dog api from 
  Use local storage to save user favorites
- Animations added
+ Animations added via keyframes 
 
 ## Project Schedule
 
@@ -64,7 +67,7 @@ Adding a dog api from
 ## Priority Matrix
 
 
-https://wireframe.cc/pro/pp/c7fac46c4452369
+https://wireframe.cc/pro/pp/75bf12268452578
 
 
 ## Timeframes
