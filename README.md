@@ -27,12 +27,9 @@ https://api.thecatapi.com/v1/breeds/
 ```
 ## Wireframes
 
-
-
-<iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/5vDo4LYohhQ8uPUv3GEM5k@2Ux7TurymN8QmewbFRbY"></iframe>
 ![image](https://user-images.githubusercontent.com/67288133/122973712-887a4380-d35f-11eb-8ae4-a290df12ccb6.png)
-
-
+![wireframe]https://wireframe.cc/pro/pp/c7fac46c4452369
+![wireframe](https://user-images.githubusercontent.com/67288133/122973712-887a4380-d35f-11eb-8ae4-a290df12ccb6.png)
 
 ### MVP/PostMVP
 
@@ -67,11 +64,9 @@ https://api.thecatapi.com/v1/breeds/ = using external API
 
 ## Priority Matrix
 
-
-<iframe style="border:none" width="800" height="450" src="https://whimsical.com/embed/SxWhuf3Keu9gqFHgStqsC7@2Ux7TurymN2ThVKU2Qmx"></iframe>
 ![image](https://user-images.githubusercontent.com/67288133/122973554-5ec11c80-d35f-11eb-8ebd-8acf8872aba6.png)
-
-
+![wireframe]https://wireframe.cc/pro/pp/75bf12268452578
+![priority matrix](https://user-images.githubusercontent.com/67288133/122973554-5ec11c80-d35f-11eb-8ebd-8acf8872aba6.png)
 
 ## Timeframes
 
