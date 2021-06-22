@@ -43,15 +43,15 @@ https://api.thecatapi.com/v1/breeds/ = using external API
 - Render data on page = THe render data will be pictures of cats 
 - Allow user to choose favorites = dropdown menu with the names of cats
 - Media Quaries and flexbox will be added
-- First request will get the image
+- First request will get the breeds in the drop down menu.
 - Second request will get the information on said image and breed
 
 #### PostMVP  
 
 
-Adding a dog api from 
- Use local storage to save user favorites
- Animations added via keyframes 
+ -Adding a dog api from 
+ -Use local storage to save user favorites
+ -Animations added via keyframes 
 
 ## Project Schedule
 
