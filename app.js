@@ -19,7 +19,10 @@ console.log(form);
 const select = document.querySelector(".selections");
 console.log(select)
 
-let contain = document.createElement("div");
+let contain = document.querySelector(".container");
+
+let button = document.querySelector("#btn");
+console.log(button);
 
 let val;
 // const container = document.querySelector(".container");
@@ -65,19 +68,25 @@ listers.forEach((names)=>{
 }
 
 select.addEventListener("change",(e)=>{
-    console.log(e.target.value);
+    let target = (e.target.value);
+    console.log(select.value)
    });
 
-async function images(imgs)
+async function images(select)
 {
 try {
-    let imageURL = "https://api.thecatapi.com/v1/images/search?breed_ids=abys"
-    images(response.data)
+    let imageURL = `https://api.thecatapi.com/v1/images/search?breed_ids=${select.value}`
+    //images(response.data)
+    
     const response = await axios.get(imageURL);
-    console.log(response)
-    images();
+    removeElement(contain)
+    console.log(response.data[0].url);
+    //return response.data[0].url
+    pics(response.data[0].url);
+        // (response.data.description)
 } catch (error) {
     }
+
 }
 
 
@@ -86,23 +95,47 @@ try {
 
 function pics(imgs)
 {
+    
     console.log(imgs);
     const images = document.createElement('img');
+    //const para = document.createElement("p");
     images.setAttribute("src",imgs);
     console.log(images);
     contain.append(images)
+    
+    //para.append()
 }
 
 
-form.addEventListener("submit",(e)=>{
+button.addEventListener("click",(e)=>{
     e.preventDefault();
-    images();
-//console.log(e.target.name)
+    images(select);
+    
 })
 
 
+
+
 function removeElement(element){
-    while(elemnt.lastChild){
-        element.removeElement(element.lastChild);
+    while(element.lastChild){
+        element.removeChild(element.lastChild);
     }
 }
+
+let jokes = ["What do you all a problem involving cats... a catastrophe","Cats just hiss and make up","Why do cats always get their way? They are very purr-suasive!","How do you know a cat is agitated? He's having a hissy fit!"];
+
+  var random = jokes[Math.floor(Math.random() * jokes.length)];
+                    
+console.log(random);
+
+// for(let i = 0; i < jokes.length; i++){
+//   console.log(jokes[i])
+// }
+
+let pushing = document.querySelector("button")
+
+pushing.addEventListener("click",function(){
+  const join = document.createElement("p");
+   join.textContent = random;
+  document.body.appendChild(join);
+})
