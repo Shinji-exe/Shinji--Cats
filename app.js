@@ -24,6 +24,8 @@ let contain = document.querySelector(".container");
 let button = document.querySelector("#btn");
 console.log(button);
 
+let carry = document.querySelector(".comedy")
+
 let val;
 // const container = document.querySelector(".container");
 // console.log(container)
@@ -80,10 +82,10 @@ try {
     
     const response = await axios.get(imageURL);
     removeElement(contain)
-    console.log(response.data[0].url);
+    console.log(response.data[0]);
     //return response.data[0].url
-    pics(response.data[0].url);
-        // (response.data.description)
+    pics(response.data[0].url,response.data[0].breeds[0].description);
+         console.log(response.data[0].url,response.data[0].description);
 } catch (error) {
     }
 
@@ -93,17 +95,17 @@ try {
 
 
 
-function pics(imgs)
+function pics(imgs,paras)
 {
     
     console.log(imgs);
     const images = document.createElement('img');
-    //const para = document.createElement("p");
+    const para = document.createElement("p");
     images.setAttribute("src",imgs);
     console.log(images);
     contain.append(images)
-    
-    //para.append()
+    para.textContent = paras;
+    contain.append(para)
 }
 
 
@@ -122,11 +124,11 @@ function removeElement(element){
     }
 }
 
-let jokes = ["What do you all a problem involving cats... a catastrophe","Cats just hiss and make up","Why do cats always get their way? They are very purr-suasive!","How do you know a cat is agitated? He's having a hissy fit!"];
+let jokes = ["What do you all a problem involving cats... a catastrophe","Cats just hiss and make up","Why do cats always get their way? They are very purr-suasive!","How do you know a cat is agitated? He's having a hissy fit!","Lookin’ good, feline good.","It ain’t easy being purrfect."];
 
-  var random = jokes[Math.floor(Math.random() * jokes.length)];
+  
                     
-console.log(random);
+//console.log(random);
 
 // for(let i = 0; i < jokes.length; i++){
 //   console.log(jokes[i])
@@ -135,7 +137,10 @@ console.log(random);
 let pushing = document.querySelector("button")
 
 pushing.addEventListener("click",function(){
+    removeElement(carry)
+    var random = jokes[Math.floor(Math.random() * jokes.length-1)];
   const join = document.createElement("p");
    join.textContent = random;
-  document.body.appendChild(join);
+  carry.append(join);
+  
 })

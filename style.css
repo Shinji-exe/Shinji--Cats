@@ -5,6 +5,7 @@
 body
 {
     margin: 0;
+   
 }
 
 
@@ -14,6 +15,7 @@ nav
     animation: slid 30s ease-in-out infinite;
     background-size: 150%;
     width: 100%;
+    height: 50px;
     background-position: center;
     position: fixed;
     display: flex;
@@ -59,10 +61,14 @@ a
 {
     
     text-decoration: none;
-    font-size: 30px;
-    font-family: "Roboto";
-     transition: 2s ease-in-out;
-     color: white;
+    font-size: 5px;
+    /* font-family: "Roboto"; */
+     transition: 1s ease-in-out;
+     color: rgb(116, 99, 99);
+     /* background: white;
+     border-radius: 95px;
+     border: 1px solid black; */
+     
 }
 
 .jokes
@@ -99,19 +105,27 @@ form
     animation: meow 20s ease-in-out infinite;
 }
 
+.container
+{
+    display: flex;
+    justify-content: center;
+}
+
 .container img
 {
     width: 50%;
     height: 20%;
+    border: 2px solid black;
 }
 
 footer
 {
-    position: relative;
+   position: relative;
     width: 100%;
-    height: 100px;
-    color: black;
-    z-index: -1;
+    height: 80px;
+    top: 869px;
+    background: linear-gradient(-45deg,black,skyblue,orange,brown);
+   
 }
 
 
@@ -127,13 +141,13 @@ footer
 20%
 {
     background-image:url("https://www.pets4homes.co.uk/images/classifieds/2014/08/10/723213/large/female-persian-x-ragdoll-kitten-tri-colour-53f0808ff29e8.jpg");
-    background-position: 0 20%;
+    /* background-position: 0 20%; */
 }
 40%
 {
     background-image:url("https://www.hdwallpaperslife.com/wp-content/uploads/2018/01/cat_snow_eyes_fluffy_95615_1920x1080-1280x1080.jpg");
-    background-position: 0 30%;
-}
+    /* background-position: 0 30%;*/
+} 
 60%
 {
 background-image: url("https://www.hdwallpaperslife.com/wp-content/uploads/2018/01/cats_couple_snow_winter_kiss_101424_1920x1080-1280x1080.jpg");
@@ -142,6 +156,7 @@ background-image: url("https://www.hdwallpaperslife.com/wp-content/uploads/2018/
 {
     background-image: url("https://www.hdwallpaperslife.com/wp-content/uploads/2020/12/white_cat_with_green_and_black_eyes_and_pink_nose_hd_cat-1280x1080.jpg");
 }
+
 }
 
 @keyframes slid 
@@ -162,10 +177,11 @@ background-image: url("https://www.hdwallpaperslife.com/wp-content/uploads/2018/
     }
 }
 
- #logo a:hover
+ #logo:hover
 {
-    color: red;
-    background-color: cornsilk;
+    /* color: white;
+    background: skyblue;
+    border-color: white; */
 }
 
 a:hover
@@ -191,7 +207,8 @@ a:hover
     #logo 
     {
       /* align-self: flex-start;   */
-      margin: 0 auto
+      margin: 0 auto; 
+      font-size: 20px
     }
 
     .nav-links
