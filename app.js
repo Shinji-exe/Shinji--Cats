@@ -12,6 +12,7 @@
 // }
 //}
 
+//querySelecting items from HTML
 const form = document.querySelector("form");
 console.log(form);
 
@@ -26,10 +27,11 @@ console.log(button);
 
 let carry = document.querySelector(".comedy")
 
-let val;
+//let val;
 // const container = document.querySelector(".container");
 // console.log(container)
 
+//Using an async function with an await axios to grab information on getListURl api
 const list = async function(){
     try {
         const getListURL = "https://api.thecatapi.com/v1/breeds/";
@@ -44,7 +46,7 @@ const list = async function(){
 
 list();
 
-
+//function setOption and names both have a parameter which will display breed on the select/options of HTML
 function setOption(drop){
     console.log(drop);
     drop.forEach((breed) => {
@@ -74,6 +76,7 @@ select.addEventListener("change",(e)=>{
     console.log(select.value)
    });
 
+   //
 async function images(select)
 {
 try {
@@ -84,8 +87,9 @@ try {
     removeElement(contain)
     console.log(response.data[0]);
     //return response.data[0].url
-    pics(response.data[0].url,response.data[0].breeds[0].description);
-         console.log(response.data[0].url,response.data[0].description);
+    pics(response.data[0].url,response.data[0].breeds[0].description,response.data[0].breeds.temperament);
+         console.log(response.data[0].url,response.data[0].description,response.data[0].temperament);
+         //pics()
 } catch (error) {
     }
 
@@ -95,16 +99,20 @@ try {
 
 
 
-function pics(imgs,paras)
+function pics(imgs,paras,temperament)
 {
     
     console.log(imgs);
     const images = document.createElement('img');
     const para = document.createElement("p");
+    const temp = document.createElement('p');
     images.setAttribute("src",imgs);
     console.log(images);
     contain.append(images)
     para.textContent = paras;
+    temp.textContent = temperament;
+    console.log(temp)
+    contain.append(temp)
     contain.append(para)
 }
 
@@ -124,7 +132,7 @@ function removeElement(element){
     }
 }
 
-let jokes = ["What do you all a problem involving cats... a catastrophe","Cats just hiss and make up","Why do cats always get their way? They are very purr-suasive!","How do you know a cat is agitated? He's having a hissy fit!","Lookin’ good, feline good.","It ain’t easy being purrfect."];
+let jokes = ["What do you all a problem involving cats... a catastrophe","Cats just hiss and make up","Why do cats always get their way? They are very purr-suasive!","How do you know a cat is agitated? He's having a hissy fit!","Lookin’ good, feline good.","It ain’t easy being purrfect."," Curb your cattitude!","Our office furniture is too nice… scratch that","Why do cats always win video games? Because they have nine lives."];
 
   
                     
