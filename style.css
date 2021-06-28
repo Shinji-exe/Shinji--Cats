@@ -119,14 +119,16 @@ form
     width: 50%;
     height: 20%;
     border: 2px solid black;
+    
 }
 
 .container p
 {
     background-color: black;
     color: white;
-    height: 70px;
+    height: 105px;
     align-self: center;
+    border: 1px solid white;
 }
 
 .comedy p

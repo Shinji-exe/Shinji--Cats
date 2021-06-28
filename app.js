@@ -87,8 +87,8 @@ try {
     removeElement(contain)
     console.log(response.data[0]);
     //return response.data[0].url
-    pics(response.data[0].url,response.data[0].breeds[0].description,response.data[0].breeds.temperament);
-         console.log(response.data[0].url,response.data[0].description,response.data[0].temperament);
+    pics(response.data[0].url,response.data[0].breeds[0].description,response.data[0].breeds[0].temperament);
+         console.log(response.data[0].url,response.data[0].description,response.data[0].breeds[0].temperament);
          //pics()
 } catch (error) {
     }
