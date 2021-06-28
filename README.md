@@ -74,14 +74,14 @@ https://api.thecatapi.com/v1/breeds/ = using external API
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Adding Form | H | 3hrs| 3hrs | 3.5hrs |
-| Working with API | H | 6hrs| 6hrs | 12hrs |
-| drop down menu| H | 2hrs| 0hrs| 0hrs|
-| Render cat search| H | 3.5hrs | 0hrs | 0hrs|
-| CSS styling | H | 4hrs | 0hrs | 0hrs |
-|Clean up code & styling | 5hrs | 0hrs | 0hrs|
-| Media queries | H | 1.5hrs | 0hrs | 0hrs |
+| Working with API | H | 6hrs| 6hrs | 8hrs |
+| drop down menu| H | 2hrs| 1hrs| 1hrs|
+| Render cat search| H | 3.5hrs | 3hrs | 3hrs|
+| CSS styling | H | 4hrs | 3hrs | 3hrs |
+|Clean up code & styling | 5hrs | 4hrs | 4hrs|
+| Media queries | H | 1.5hrs | 50mins | 50mins |
 | Create a save function | H | 3hrs | 0hrs | 0hrs|
-| Total | H | 0hrs| 0hrs | 0hrs | 0hrs|
+| Total | H | 0hrs| 0hrs | 0hrs | 22hrs|
 
 ## Code Snippet
 
@@ -98,6 +98,25 @@ const list = async function(){
         console.error(error);
     }
 }
+
+async function images(select)
+{
+try {
+    let imageURL = `https://api.thecatapi.com/v1/images/search?breed_ids=${select.value}`
+    //images(response.data)
+    
+    const response = await axios.get(imageURL);
+    removeElement(contain)
+    console.log(response.data[0]);
+    //return response.data[0].url
+    pics(response.data[0].url,response.data[0].breeds[0].description,response.data[0].breeds[0].temperament);
+         //console.log(response.data[0].url,response.data[0].description,response.data[0].breeds[0].temperament);
+         //pics()
+} catch (error) {
+    }
+
+}
+
 ```
 
 ## Change Log
