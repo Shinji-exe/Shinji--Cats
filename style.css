@@ -163,6 +163,7 @@ footer i
 {
     font-size: 35px;
     padding: 9px;
+    
 }
 
  footer #git
@@ -170,6 +171,7 @@ footer i
 color: white;
 /* justify-content: center;
 display: flex; */
+
  }
 
  footer #link
@@ -177,6 +179,8 @@ display: flex; */
     color: white;
     /* justify-content: center;
     display: flex; */
+    border-radius: 95px;
+   
  }
 
  select
@@ -249,6 +253,19 @@ a:hover
 #btn:hover
 {
     background-color: green;
+    
+}
+
+#git:hover
+{
+color: purple;
+
+}
+
+#link:hover
+{
+    
+color: skyblue;
 }
 
 @media screen and (max-width: 600px)

@@ -97,7 +97,7 @@ try {
 
 
 
-
+//acquiring the images and the description in function pics()
 
 function pics(imgs,paras,temperament)
 {
@@ -141,6 +141,8 @@ let jokes = ["What do you all a problem involving cats... a catastrophe","Cats j
 // for(let i = 0; i < jokes.length; i++){
 //   console.log(jokes[i])
 // }
+
+//With the jokes array we use a math.floor and math.random as a joke randomizer and append it to the page with a button press
 
 let pushing = document.querySelector("button")
 
